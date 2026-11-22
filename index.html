@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#635bff">
+  <meta name="description" content="PintarPlay — belajar pengetahuan umum, matematika, kosakata, dan logika lewat permainan singkat yang seru.">
+  <title>PintarPlay — Belajar Jadi Seru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="PintarPlay beranda">
+        <span class="brand-mark">✦</span>
+        <span>Pintar<span class="brand-accent">Play</span></span>
+      </a>
+      <nav class="top-nav" aria-label="Navigasi utama">
+        <a href="#permainan">Permainan</a>
+        <a href="#cara-bermain">Cara bermain</a>
+      </nav>
+      <div class="profile-chip">
+        <span class="avatar">🎓</span>
+        <span class="profile-name">Pemain</span>
+        <span class="xp-pill"><span>✦</span> <b id="header-xp">0</b> XP</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> BELAJAR TANPA TERASA BELAJAR</div>
+          <h1>Otak makin tajam,<br><span>mainnya makin seru.</span></h1>
+          <p>Asah pengetahuan, hitung cepat, tambah kosakata, dan pecahkan teka-teki. Semua dalam permainan singkat berbahasa Indonesia.</p>
+          <a class="primary-btn" href="#permainan">Mulai bermain <span>↗</span></a>
+          <div class="hero-note"><span>⚡</span> Gratis • Tanpa daftar • Langsung main</div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="float-card card-star">✦ <small>+ XP</small></div>
+          <div class="float-card card-bulb">💡</div>
+          <div class="hero-blob">
+            <div class="blob-face">🧠</div>
+            <div class="blob-spark spark-a">✦</div><div class="blob-spark spark-b">✧</div>
+          </div>
+          <div class="float-card card-check">✓ <small>Hebat!</small></div>
+          <div class="float-card card-number">123</div>
+        </div>
+      </section>
+
+      <section class="stats-row" aria-label="Statistik permainan">
+        <div class="stat"><span class="stat-icon purple">✦</span><div><b id="stat-xp">0</b><small>Total XP</small></div></div>
+        <div class="stat"><span class="stat-icon orange">🔥</span><div><b id="stat-streak">0</b><small>Hari bermain</small></div></div>
+        <div class="stat"><span class="stat-icon green">✓</span><div><b id="stat-played">0</b><small>Permainan selesai</small></div></div>
+        <div class="stat"><span class="stat-icon blue">🏆</span><div><b id="stat-best">—</b><small>Skor terbaik</small></div></div>
+      </section>
+
+      <section class="games-section" id="permainan">
+        <div class="section-heading">
+          <div><div class="eyebrow">PILIH TANTANGANMU</div><h2>Mulai petualangan belajar</h2></div>
+          <span class="section-tag">4 permainan tersedia <span>✦</span></span>
+        </div>
+        <div class="game-grid">
+          <article class="game-card game-purple">
+            <div class="game-card-top"><span class="game-emoji">🌍</span><span class="level-tag">Pengetahuan</span></div>
+            <h3>Kuis Pengetahuan</h3>
+            <p>Uji wawasanmu tentang dunia, sains, sejarah, dan Indonesia.</p>
+            <div class="game-meta"><span>⏱ 5–7 menit</span><span>10 soal</span></div>
+            <button class="play-btn" data-game="trivia">Mainkan sekarang <span>→</span></button>
+          </article>
+          <article class="game-card game-orange">
+            <div class="game-card-top"><span class="game-emoji">🔢</span><span class="level-tag">Berhitung</span></div>
+            <h3>Matematika Kilat</h3>
+            <p>Latih kecepatan berhitung dengan tantangan yang terus berubah.</p>
+            <div class="game-meta"><span>⏱ 60 detik</span><span>Tanpa batas soal</span></div>
+            <button class="play-btn" data-game="math">Mainkan sekarang <span>→</span></button>
+          </article>
+          <article class="game-card game-green">
+            <div class="game-card-top"><span class="game-emoji">🔤</span><span class="level-tag">Kosakata</span></div>
+            <h3>Tebak Kata</h3>
+            <p>Temukan kata yang tepat dari petunjuk dan huruf yang tersedia.</p>
+            <div class="game-meta"><span>⏱ 5 menit</span><span>8 tantangan</span></div>
+            <button class="play-btn" data-game="words">Mainkan sekarang <span>→</span></button>
+          </article>
+          <article class="game-card game-blue">
+            <div class="game-card-top"><span class="game-emoji">🧩</span><span class="level-tag">Logika</span></div>
+            <h3>Asah Logika</h3>
+            <p>Pecahkan pola, urutan, dan teka-teki untuk melatih cara berpikirmu.</p>
+            <div class="game-meta"><span>⏱ 5–7 menit</span><span>8 soal</span></div>
+            <button class="play-btn" data-game="logic">Mainkan sekarang <span>→</span></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-section" id="cara-bermain">
+        <div class="how-intro"><div class="eyebrow">SEDERHANA & MENYENANGKAN</div><h2>Belajar sedikit,<br><span>bertumbuh setiap hari.</span></h2><p>Tidak perlu akun atau aplikasi tambahan. Pilih permainan, jawab tantangan, dan kumpulkan XP untuk melihat perkembanganmu.</p></div>
+        <div class="steps">
+          <div class="step"><span class="step-number">01</span><div><b>Pilih permainan</b><p>Mulai dari topik yang paling kamu suka.</p></div><span class="step-icon">🎮</span></div>
+          <div class="step"><span class="step-number">02</span><div><b>Jawab tantangan</b><p>Gunakan pengetahuan dan logikamu.</p></div><span class="step-icon">🧠</span></div>
+          <div class="step"><span class="step-number">03</span><div><b>Kumpulkan XP</b><p>Semakin banyak latihan, semakin berkembang.</p></div><span class="step-icon">🏆</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><a class="brand footer-brand" href="#"><span class="brand-mark">✦</span><span>Pintar<span class="brand-accent">Play</span></span></a><p>Belajar jadi seru, satu permainan setiap hari.</p><span class="footer-copy">Dibuat untuk semua orang · Gratis digunakan</span></footer>
+  </div>
+
+  <div class="game-modal" id="game-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <section class="game-panel" role="dialog" aria-modal="true" aria-labelledby="game-title">
+      <button class="close-btn" id="close-game" aria-label="Tutup permainan">×</button>
+      <div id="game-content"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
